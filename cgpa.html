@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="C:\Users\User\Desktop\FSWB\common.css"/>
+</head>
+<body>
+
+    <script>
+
+        function calculate()
+            {
+    
+            var a=parseInt(document.getElementById("s1").value);
+            var b=parseInt(document.getElementById("s2").value);
+            var c=parseInt(document.getElementById("s3").value);
+            var d=parseInt(document.getElementById("s4").value);
+            var e=parseInt(document.getElementById("s5").value);
+            var f=parseInt(document.getElementById("s6").value);
+            var g=parseInt(document.getElementById("s7").value);
+            var h=parseInt(document.getElementById("s8").value);
+            
+    
+           var aa=24*a;
+           var ab=24*b;
+           var ac=27*c;
+           var ad=27*d;
+           var ae=24*e;
+           var af=24*f;
+           var ag=24*g;
+           var ah=26*h;
+           
+    
+            var z=((aa+ab+ac+ad+ae+af+ag+ah)/200);
+    
+           
+            document.getElementById("result").value=parseFloat(z);
+            
+            
+            }
+
+            </script>
+    <form>
+        <a href="C:\Users\User\Desktop\FSWB\INDEX.html">
+        <input class="back" type="button" name="Back" value="Back"> <br></a>
+        <label class="title">CGPA Calculator</label> <br>
+        <input class="btn" id="s1" style="top: 183px;" type="text" placeholder="                    1st semester SGPA" name="first"> <br>
+        <input class="btn" id="s2" style="top: 276px;" type="text" placeholder="                    2st semester SGPA" name="second"> <br>
+        <input class="btn" id="s3" style="top: 369px;" type="text" placeholder="                    3rd semester SGPA" name="third"> <br>
+        <input class="btn" id="s4" style="top: 462px;" type="text" placeholder="                    4th semester SGPA" name="fourth"> <br>
+        <input class="btn" id="s5" style="top: 555px;" type="text" placeholder="                    5th semester SGPA" name="fifth"> <br>
+        <input class="btn" id="s6" style="top: 648px;" type="text" placeholder="                    6th semester SGPA" name="sixth"> <br>
+        <input class="btn" id="s7" style="top: 741px;" type="text" placeholder="                    7th semester SGPA" name="seventh"> <br>
+        <input class="btn" id="s8" style="top: 834px;" type="text" placeholder="                    8th semester SGPA" name="eighth"> <br>
+        <input class="cal" type="button" value="Calculate CGPA" name="cal" onclick="calculate()"> <br>
+        <textarea class="res" id="result" ></textarea>
+    </form>
+   
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C:\Users\User\Desktop\FSWB\common.css"/>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        function calculate()
+            {
+    
+            var a=parseInt(document.getElementById("s41").value);
+            var b=parseInt(document.getElementById("s42").value);
+            var c=parseInt(document.getElementById("s43").value);
+            var d=parseInt(document.getElementById("s44").value);
+            var e=parseInt(document.getElementById("s45").value);
+            var f=parseInt(document.getElementById("s46").value);
+            var g=parseInt(document.getElementById("s47").value);
+            var h=parseInt(document.getElementById("s48").value);
+            var i=parseInt(document.getElementById("s49").value);
+    
+           var aa=3*marks(a);
+           var ab=4*marks(b);
+           var ac=3*marks(c);
+           var ad=3*marks(d);
+           var ae=3*marks(e);
+           var af=3*marks(f);
+           var ag=2*marks(g);
+           var ah=2*marks(h);
+           var ai=1*marks(i);
+    
+            var z=((aa+ab+ac+ad+ae+af+ag+ah+ai)/24);
+    
+           
+            document.getElementById("result").value=parseFloat(z);
+            
+            
+            }
+            
+            function marks(y)
+            {
+                if(y>=90)
+                return 10;
+                else if (y<=89&&y>=80)
+                return 9;
+                else if (y<=79&&y>=70)
+                return 8;
+                else if (y<=69&&y>=60)
+                return 7;
+                else if (y<=59&&y>=50)
+                return 6;
+                else if (y<=49&&y>=45)
+                return 5;
+                else if (y<=44&&y>=40)
+                return 4;
+                else
+                return 0;
+                
+            }
+    
+    
+    
+            </script>
+    
+
+    <form>
+        <a href="C:\Users\User\Desktop\FSWB\page2.html">
+        <input class="back" style="left:420px;" type="button" name="Back" value="Back"> <br></a>
+        <label class="title" style="position: absolute;left: 520px;top: 16px;">
+            <pre>         Fourth Semester sgpa </pre></label> <br>
+        <input class="btn" id="s41" style="top: 150px;" type="text" placeholder="                      18MAT41" name="MAT1"> <br>
+        <input class="btn" id="s42" style="top: 235px;" type="text" placeholder="                      18XX42" name="PHY"> <br>
+        <input class="btn" id="s43" style="top: 320px;" type="text" placeholder="                      18XX43" name="ELE"> <br>
+        <input class="btn" id="s44" style="top: 405px;" type="text" placeholder="                      18XX44" name="CIV"> <br>
+        <input class="btn" id="s45" style="top: 490px;" type="text" placeholder="                      18XX45" name="EGDL"> <br>
+        <input class="btn" id="s46" style="top: 575px;" type="text" placeholder="                      18XX46" name="PHYL"> <br>
+        <input class="btn" id="s47" style="top: 660px;" type="text" placeholder="                      18XXL47" name="ELEL"> <br>
+        <input class="btn" id="s48" style="top: 745px;" type="text" placeholder="                      18XXL48" name="EGH"> <br>
+        <input class="btn" id="s49" style="top: 830px;" type="text" placeholder="                      18CPC39/49 or Kannada" name="EGH"> <br>
+        <input class="cal"  style="left: 294px;
+        top: 950px;" type="button" value="Calculate SGPA" name="cals" onclick="calculate()"> <br>
+         <textarea class="res" id="result"  style="left: 1070px;
+        top: 950px;"></textarea>
+    </form>
+   
+
+</body>
+
+</html>

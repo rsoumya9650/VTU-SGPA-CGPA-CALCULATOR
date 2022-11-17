@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C:\Users\User\Desktop\FSWB\common.css"/>
+</head>
+<body>
+
+  <script>
+
+    function calculate()
+        {
+
+        var a=parseInt(document.getElementById("mat").value);
+        var b=parseInt(document.getElementById("phy").value);
+        var c=parseInt(document.getElementById("ele").value);
+        var d=parseInt(document.getElementById("civ").value);
+        var e=parseInt(document.getElementById("egdl").value);
+        var f=parseInt(document.getElementById("phyl").value);
+        var g=parseInt(document.getElementById("elel").value);
+        var h=parseInt(document.getElementById("egh").value);
+        
+
+       var aa=4*marks(a);
+       var ab=4*marks(b);
+       var ac=3*marks(c);
+       var ad=3*marks(d);
+       var ae=3*marks(e);
+       var af=1*marks(f);
+       var ag=1*marks(g);
+       var ah=1*marks(h);
+       
+
+        var z=((aa+ab+ac+ad+ae+af+ag+ah)/20);
+
+       
+        document.getElementById("result").value=parseFloat(z);
+        
+        
+        }
+        
+        function marks(y)
+        {
+            if(y>=90)
+            return 10;
+            else if (y<=89&&y>=80)
+            return 9;
+            else if (y<=79&&y>=70)
+            return 8;
+            else if (y<=69&&y>=60)
+            return 7;
+            else if (y<=59&&y>=50)
+            return 6;
+            else if (y<=49&&y>=45)
+            return 5;
+            else if (y<=44&&y>=40)
+            return 4;
+            else
+            return 0;
+            
+        }
+
+
+
+        </script>
+
+        
+        
+
+    <form>
+        <a href="C:\Users\User\Desktop\FSWB\page2.html">
+        <input class="back" type="button" name="Back" value="Back"> <br></a>
+        <label class="title" style="position: absolute;left: 541px;top: 76px;
+        ">
+            <pre>   1st & 2nd Semester Physics Cycle</pre></label> <br>
+            
+        <input class="btn" id="mat" style="top: 183px;" type="text" required="required" placeholder="                      18MAT11/21" name="MAT1"> 
+        
+        <input class="btn" id="phy" style="top: 276px;" type="text" placeholder="                      18PHY12/22" name="PHY"> <br>
+        <input class="btn" id="ele" style="top: 369px;" type="text" placeholder="                      18ELE13/23" name="ELE"> <br>
+        <input class="btn" id="civ" style="top: 462px;" type="text" placeholder="                      18CIV14/24" name="CIV"> <br>
+        <input class="btn" id="egdl" style="top: 555px;" type="text" placeholder="                      18EGDL15/25" name="EGDL"> <br>
+        <input class="btn" id="phyl" style="top: 648px;" type="text" placeholder="                      18PHYL16/26" name="PHYL"> <br>
+        <input class="btn" id="elel" style="top: 741px;" type="text" placeholder="                      18ELEL17/27" name="ELEL"> <br>
+        <input class="btn" id="egh" style="top: 834px;" type="text" placeholder="                      18EGH18/28" name="EGH"> <br>
+        <input id="1stsem" class="cal" type="button" value="Calculate SGPA" name="cals" onclick="calculate()"> <br>
+        <textarea class="res" id="result" ></textarea>
+    </form>
+   
+
+</body>
+
+</html>
